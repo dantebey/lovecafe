@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu | Love Café</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Love Café</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+  </nav>
+</header>
+
+<section class="section">
+  <h2>Our Menu</h2>
+
+
+  <h3 class="menu-title">🌅 Breakfast</h3>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="https://plus.unsplash.com/premium_photo-1667807521536-bc35c8d8b64b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Omelette">
+      <h4>Omelette</h4>
+      <span>$17.50</span>
+      <button onclick="addToCart('Omelette',17.5)">Add</button>
+    </div>
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1718795903419-2bc5bba08d2f?q=80&w=403&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Croissant">
+      <h4>Croissant</h4>
+      <span>$5.50</span>
+      <button onclick="addToCart('Croissant',5.5)">Add</button>
+    </div>
+    <div class="menu-card">
+    <img src="https://plus.unsplash.com/premium_photo-1700948867056-7926f331d2a9?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Scrambled Eggs">
+    <h4>Scrambled Eggs</h4>
+    <span>$8.50</span>
+    <button onclick="addToCart('Scrambled Eggs',8.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pancakes">
+    <h4>Pancakes</h4>
+    <span>$8.00</span>
+    <button onclick="addToCart('Pancakes',8)">Add</button>
+  </div>
+  
+  </div>
+
+  <h3 class="menu-title">🍽 Lunch</h3>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="https://safrescobaldistatic.blob.core.windows.net/media/2022/11/PIZZA-MARGHERITA.jpg" alt="Pizza Margherita">
+      <h4>Pizza Margherita</h4>
+      <span>$14.50</span>
+      <button onclick="addToCart('Pizza Margherita',14.5)">Add</button>
+    </div>
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1574926054530-540288c8e678?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Caesar Salad">
+      <h4>Caesar Salad</h4>
+      <span>$11.50</span>
+      <button onclick="addToCart('Caesar Salad',11.5)">Add</button>
+    </div>
+<div class="menu-card">
+  <img src="https://shop.provisions.com.au/cdn/shop/products/4.jpg?v=1568265418" alt="Fresh Fruit Platter">
+  <h4>Fresh Fruit Platter</h4>
+  <span>$10.00</span>
+  <button onclick="addToCart('Fresh Fruit Platter',10)">Add</button>
+</div>
+
+  </div>
+
+
+  <h3 class="menu-title">🌙 Dinner</h3>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="https://plus.unsplash.com/premium_photo-1661310177352-f586bf23a403?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kebab">
+      <h4>Kebab</h4>
+      <span>$22.00</span>
+      <button onclick="addToCart('Kebab',22)">Add</button>
+    </div>
+    <div class="menu-card">
+      <img src="https://plus.unsplash.com/premium_photo-1664478291780-0c67f5fb15e6?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Steak Bowl">
+      <h4>Spaghetti Bolognese</h4>
+      <span>$24.00</span>
+      <button onclick="addToCart('Spaghetti Bolognese',24)">Add</button>
+    </div>
+<div class="menu-card">
+  <img src="https://images.unsplash.com/photo-1712579733874-c3a79f0f9d12?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Grilled Chicken">
+  <h4>Grilled Chicken</h4>
+  <span>$20.00</span>
+  <button onclick="addToCart('Grilled Chicken',20)">Add</button>
+</div>
+
+<div class="menu-card">
+  <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Beef Steak">
+  <h4>Beef Steak</h4>
+  <span>$25.00</span>
+  <button onclick="addToCart('Beef Steak',25)">Add</button>
+</div>
+
+  </div>
+
+<<h3 class="menu-title"> Dessert</h3>
+<div class="menu-grid">
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1567171466295-4afa63d45416?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cheesecake">
+    <h4>Cheesecake</h4>
+    <span>$6.50</span>
+    <button onclick="addToCart('Cheesecake',6.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Brownie">
+    <h4>Brownie</h4>
+    <span>$5.50</span>
+    <button onclick="addToCart('Brownie',5.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1600477063726-b6b2473e43f9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fruit Tart">
+    <h4>Fruit Tart</h4>
+    <span>$6.50</span>
+    <button onclick="addToCart('Fruit Tart',6.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tiramisu">
+    <h4>Tiramisu</h4>
+    <span>$7.00</span>
+    <button onclick="addToCart('Tiramisu',7)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1702564696095-ba5110856bf2?q=80&w=386&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sundae">
+    <h4>Sundae</h4>
+    <span>$5.50</span>
+    <button onclick="addToCart('Sundae',5.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1596350351228-e47e93fdb992?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Macaron">
+    <h4>Macaron</h4>
+    <span>$4.50</span>
+    <button onclick="addToCart('Macaron',4.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://i.redd.it/0z0pcpw12rw81.jpg" alt="Chips BY FEMTUDEBOY">
+    <h4>Chips BY FEMTUDEBOY</h4>
+    <span>$0.99</span>
+    <button onclick="addToCart('Chips BY FEMTUDEBOY',0.99)">Add</button>
+  </div>
+</div>
+
+  <h3 class="menu-title"> Water</h3>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1602904761432-f9ad96133982?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Glass of Water">
+      <h4>Glass of Water</h4>
+      <span>$1.00</span>
+      <button onclick="addToCart('Glass of Water',1)">Add</button>
+    </div>
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1575596510825-f748919a2bf7?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lemonade">
+      <h4>Lemonade</h4>
+      <span>$2.00</span>
+      <button onclick="addToCart('Lemonade',2)">Add</button>
+    </div>
+  </div>
+
+<h3 class="menu-title">🌱 Vegan Specials</h3>
+<div class="menu-grid">
+
+  <div class="menu-card">
+    <img src="https://plus.unsplash.com/premium_photo-1671559021919-19d9610c8cad?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vegan Avocado Toast">
+    <h4>Vegan Avocado Toast</h4>
+    <span>$9.50</span>
+    <button onclick="addToCart('Vegan Avocado Toast',9.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://plus.unsplash.com/premium_photo-1664648005776-d357bc76d2db?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vegan Buddha Bowl">
+    <h4>Vegan Buddha Bowl</h4>
+    <span>$13.50</span>
+    <button onclick="addToCart('Vegan Buddha Bowl',13.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://www.schaer.com/sites/default/files/styles/panoramic_fullwidth/public/2216_Vegan%20Falafel%20Wrap.jpg.jpg?itok=6xZtXV-z" alt="Vegan Falafel Wrap">
+    <h4>Vegan Falafel Wrap</h4>
+    <span>$11.00</span>
+    <button onclick="addToCart('Vegan Falafel Wrap',11)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://thebigmansworld.com/wp-content/uploads/2020/06/vegan-chocolate-cake2.jpeg" alt="Vegan Chocolate Cake">
+    <h4>Vegan Chocolate Cake</h4>
+    <span>$7.50</span>
+    <button onclick="addToCart('Vegan Chocolate Cake',7.5)">Add</button>
+  </div>
+
+</div>
+
+<h3 class="menu-title"> Soft Drinks</h3>
+<div class="menu-grid">
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=387&auto=format&fit=crop" alt="Coca Cola">
+    <h4>Coca Cola</h4>
+    <span>$2.50</span>
+    <button onclick="addToCart('Coca Cola',2.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1602143919922-2c6e4ed87e40?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Coca Cola Zero">
+    <h4>Coca Cola Zero</h4>
+    <span>$2.50</span>
+    <button onclick="addToCart('Coca Cola Zero',2.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Iced Tea">
+    <h4>Iced Tea</h4>
+    <span>$2.50</span>
+    <button onclick="addToCart('Iced Tea',2.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://plus.unsplash.com/premium_photo-1675667390417-d9d23160f4a6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Orange Juice">
+    <h4>Orange Juice</h4>
+    <span>$3.00</span>
+    <button onclick="addToCart('Fresh Orange Juice',3)">Add</button>
+  </div>
+</div>
+
+<h3 class="menu-title"> Coffee</h3>
+<div class="menu-grid">
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?q=80&w=871&auto=format&fit=crop" alt="Matcha Latte">
+    <h4>Matcha Latte</h4>
+    <span>$6.50</span>
+    <button onclick="addToCart('Matcha Latte',6.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://plus.unsplash.com/premium_photo-1663853491469-786911ac70b8?q=80&w=387&auto=format&fit=crop" alt="Iced Matcha">
+    <h4>Iced Matcha</h4>
+    <span>$6.50</span>
+    <button onclick="addToCart('Iced Matcha',6.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1580661869408-55ab23f2ca6e?q=80&w=435&auto=format&fit=crop" alt="Americano">
+    <h4>Americano</h4>
+    <span>$3.00</span>
+    <button onclick="addToCart('Americano',3)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?q=80&w=386&auto=format&fit=crop" alt="Iced Americano">
+    <h4>Iced Americano</h4>
+    <span>$3.50</span>
+    <button onclick="addToCart('Iced Americano',3.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1563731649913-fab41907b535?q=80&w=282&auto=format&fit=crop" alt="Macchiato">
+    <h4>Macchiato</h4>
+    <span>$3.50</span>
+    <button onclick="addToCart('Macchiato',3.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=387&auto=format&fit=crop" alt="Iced Macchiato">
+    <h4>Iced Macchiato</h4>
+    <span>$4.00</span>
+    <button onclick="addToCart('Iced Macchiato',4)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=387&auto=format&fit=crop" alt="Espresso">
+    <h4>Espresso</h4>
+    <span>$2.50</span>
+    <button onclick="addToCart('Espresso',2.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=387&auto=format&fit=crop" alt="Cappuccino">
+    <h4>Cappuccino</h4>
+    <span>$4.50</span>
+    <button onclick="addToCart('Cappuccino',4.5)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=387&auto=format&fit=crop" alt="Latte">
+    <h4>Caffè Latte</h4>
+    <span>$4.75</span>
+    <button onclick="addToCart('Caffè Latte',4.75)">Add</button>
+  </div>
+
+  <div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=387&auto=format&fit=crop" alt="Mocha">
+    <h4>Mocha</h4>
+    <span>$5.00</span>
+    <button onclick="addToCart('Mocha',5)">Add</button>
+  </div>
+
+</div>
+
+ 
+
+  <h3 class="menu-title">🍷 Wines</h3>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Red Wine">
+      <h4>Red Wine</h4>
+      <span>$6.00</span>
+      <button onclick="addToCart('Red Wine ',6)">Add</button>
+    </div>
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1606767208159-1a5fb0a87841?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="White Wine">
+      <h4>White Wine</h4>
+      <span>$6.25</span>
+      <button onclick="addToCart('White Wine ',6.25)">Add</button>
+      
+    </div>
+  </div>
+
+
+  <h3 class="menu-title">🍺 Beers</h3>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1599333388451-e28bda44d0c3?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Heineken">
+      <h4>Heineken</h4>
+      <span>$6.00</span>
+      <button onclick="addToCart('Heineken',6)">Add</button>
+    </div>
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1720364187685-6ee6fcdc50c4?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bintang">
+      <h4>Bintang</h4>
+      <span>$5.00</span>
+      <button onclick="addToCart('Bintang',5)">Add</button>
+    </div>
+  </div>
+
+
+  <h3 class="menu-title">🥃 Whiskey</h3>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1592821399029-4c6dd39244e6?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jack Daniel`s ">
+      <h4>Jack Daniel`s </h4>
+      <span>$8.00</span>
+      <button onclick="addToCart('Jack Daniel`s',8)">Add</button>
+    </div>
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1594578254908-1a00d0c9d2b3?q=80&w=373&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chivas Regal`s">
+      <h4>Chivas Regal`s</h4>
+      <span>$9.00</span>
+      <button onclick="addToCart('Chivas Regal`s',9)">Add</button>
+    </div>
+  </div>
+
+  
+  
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
